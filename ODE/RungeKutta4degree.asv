@@ -1,0 +1,13 @@
+% dy/dx = 2xy
+% y(0) = 2
+clear all; clc;
+x0 = 0;
+y0 = 2;
+h = 0.01;
+for steps = 1:100
+    x1 = x0 + h;
+    y1 = y0 + h * (k1 + k2 + k3 + k4) / 6;
+    x0 = x1;
+    y0 = y1;
+    fprintf("x = %d, y = %d\n", x0, y0);
+end
