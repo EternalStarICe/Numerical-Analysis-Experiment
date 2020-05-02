@@ -13,8 +13,8 @@ for i = 2:m
 end
 fval = y0(1);
 xval = 1;
-% 差商表的第i列的第1个元素为f[x1, ..., xi]
+% 差商表的第i列的第1个元素为f[x1, ..., x
 for i = 2:m+1
-    xval = xval * (x - x0(i-1)); % xval对应(x-x1)(x-x2)....
+    xval = xval * (x - x0(i-1));
     fval = fval + T(1, i-1) * xval;
 end
