@@ -1,4 +1,5 @@
 % f(x) = ln(x-2) x¡Ê[2.5, 4]
+clear all; clc;
 x0 = 4;
 x1 = 3.5;
 f = @(x)(log(x-2));

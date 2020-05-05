@@ -1,4 +1,4 @@
-% f(x) = 1/x  x∈[1.1, 4.1]  求R_1
+% f(x) = 1/x  x∈[1.1, 4.1]  求R
 clear all;clc;
 f = @(x)(1 ./ x);
 lb = 1.1; %下界
@@ -16,4 +16,6 @@ for k = 2:4 % 分别求出第2-4列
     end
 end
 T;
-min(T((find(T(:, 4) ~= 0)),4))
+I = min(T((find(T(:, 4) ~= 0)),4));
+true_I = log(4.1/1.1);
+fprintf("近似值为%g, 精确值为%g, 误差为%g", I, true_I, I-true_I)
